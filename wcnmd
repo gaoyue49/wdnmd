@@ -1,12 +1,5 @@
-from collections import Counter
-
-# 读取 corpus.txt 文件
-with open('corpus.txt', 'r') as f:
-    text = f.read().lower()
-
-# 分词并统计词频
-words = text.split()
-word_freq = Counter(words)
-
-# 打印前 10 个高频词
-print(word_freq.most_common(10))
+git checkout -b feature/hello-banner
+# (파일 수정: ex. index.html에 배너 추가)
+git add .
+git commit -m "✨ Add hello banner to homepage"
+git push origin feature/hello-banner
