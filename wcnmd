@@ -1,0 +1,12 @@
+from collections import Counter
+
+# 读取 corpus.txt 文件
+with open('corpus.txt', 'r') as f:
+    text = f.read().lower()
+
+# 分词并统计词频
+words = text.split()
+word_freq = Counter(words)
+
+# 打印前 10 个高频词
+print(word_freq.most_common(10))
